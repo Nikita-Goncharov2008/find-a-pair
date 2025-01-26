@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    background-color: #90d9d8;
+}
+
+.block{
+    width: 50%; 
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.card{
+    width: 23%;
+    height: 30%;
+    margin: 5px;
+    transform-style:preserve-3d;
+    transition: transform .4s; 
+}
+
+.notTurnedPage, .turnedPage{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 1em;
+    background-color: #896195;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.notTurnedPage{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    transform: rotateY(180deg);
+
+}
+
+.tries{
+    color:#fff;
+    text-align: center;
+    font-size: 48px;
+}
